@@ -1,20 +1,17 @@
-# ARC9 BOCW Tactical Rifles
+# ARC9 BOCW Tactical Rifles DLC
 
-4 BOCW Tactical Rifles on the base [ARC9](https://github.com/HaodongMo/ARC-9)
+One BOCW Tactical Rifles DLC on the base [ARC9](https://github.com/HaodongMo/ARC-9)
 
-Here we go again. Tactical rifles went pretty much under my radar so this should be good. Four weapons in which one is very popular around here.
+Only one tactical rifle was added post launch. Kinda sad.
 
 ## You need to have [Shared Content](https://github.com/multinettt/ARC-9_BOCW_Shared_Content) in order to avoid missing textures, materials and sounds.
 
 ## [BOCW Attachments](https://github.com/multinettt/ARC-9_BOCW_Attachments)
 
 ## Weapons List:
-### Tactical Rifles:
+### Tactical Rifles DLC:
 
-- Type 63
-- M16 (M16A2)
-- AUG
-- DMR 14 (M14)
+- CARV.2
 
 ## Personalization:
 
