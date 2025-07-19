@@ -508,9 +508,6 @@ SWEP.AttachmentElements = {
             [2] = {
                 Pos = Vector(-3.085, 0, 0),
             },
-            [4] = {
-                Pos = Vector(15.22, 0, 3.42),
-            },
         },
     },
     ["barrel_cavalry"] = {
@@ -521,9 +518,6 @@ SWEP.AttachmentElements = {
             [2] = {
                 Pos = Vector(1.338, 0, 0),
             },
-            [4] = {
-                Pos = Vector(15.26, 0, 3.42),
-            },
         },
     },
     ["barrel_striketeam"] = {
@@ -533,9 +527,6 @@ SWEP.AttachmentElements = {
         AttPosMods = {
             [2] = {
                 Pos = Vector(-0.31, 0, 0),
-            },
-            [4] = {
-                Pos = Vector(15.22, 0, 3.42),
             },
         },
     },
@@ -556,9 +547,6 @@ SWEP.AttachmentElements = {
         AttPosMods = {
             [2] = {
                 Pos = Vector(-4.075, 0, 0),
-            },
-            [4] = {
-                Pos = Vector(15.26, 0, 3.42),
             },
         },
     },
