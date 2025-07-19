@@ -38,7 +38,7 @@ ARC9.LoadAttachment(ATT, "bocw_carv2_barrel_rapidfire")
 ATT = {}
 
 ATT.PrintName = [[22.3" Cavalry Lancer]] --// 2
-ATT.CompactName = [[22.3" CAVLRY]]
+ATT.CompactName = [[22.3" CVLRY]]
 ATT.Icon = Material("entities/bocw_atts/barrels/carv2_cavalry.png", "mips smooth")
 ATT.Description = [[Heavy profile barrel broach rifled to improve damage against enemy vehicles.
 
@@ -532,7 +532,7 @@ ATT = {}
 
 ATT.PrintName = "Marathon Stock" --// 2
 ATT.CompactName = "MARATHON"
-ATT.Icon = Material("entities/bocw_atts/stocks/carv2_wire.png", "mips smooth")
+ATT.Icon = Material("entities/bocw_atts/stocks/carv2_marathon.png", "mips smooth")
 ATT.Description = [[Cut down stock reduces weapon weight to improve sprint to fire time.
 
 The Marathon Stock is set of Stock attachments available in Call of Duty: Black Ops Cold War. It has three distinct variants that improve the delay between sprinting and firing. The first version of the attachment has alternates in the forms of the Wire Stock, Collapsed Stock, CQB Stock, and Shotgun Stock. The second has alternates in the form of the Buffer Tube, No Stock, and CQB Pad. The third version is exclusively for Shotguns.]]
@@ -660,3 +660,29 @@ ATT.SpreadMultHipFire = 1.3
 ATT.ActivateElements = {"stockgone"}
 
 ARC9.LoadAttachment(ATT, "bocw_carv2_stock_raider")
+
+--
+
+ATT = {}
+
+ATT.PrintName = "CARV.2 Muzzle Device"
+ATT.CompactName = "C2 MUZZLE"
+ATT.Icon = Material("entities/acwatt_bocw.png", "mips smooth")
+ATT.Description = [[Default CARV.2 muzzle device.]]
+
+ATT.SortOrder = -10
+
+ATT.Model = "models/weapons/arc9/atts/bocw_carv2_muzzle.mdl"
+
+ATT.Category = {"bocw_carv2_muzzle"}
+
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.MuzzleParticleOverride = "muzzleflash_1"
+ATT.MuzzleParticleOverride_Priority = 10
+ATT.MuzzleDevice = true
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_carv2_muzzle_base")
