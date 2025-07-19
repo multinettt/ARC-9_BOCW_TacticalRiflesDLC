@@ -686,3 +686,177 @@ ATT.MuzzleDevice = true
 ATT.MenuCategory = "ARC9 - BOCW Attachments"
 
 ARC9.LoadAttachment(ATT, "bocw_carv2_muzzle_base")
+
+ATT = {}
+
+ATT.PrintName = "Muzzle Brake 4.73"
+ATT.CompactName = "MZLBRK 473"
+ATT.Icon = Material("entities/bocw_atts/muzzles/carv2_compensator1.png", "mips smooth")
+ATT.Description = [[Reverse venting redirects gases to the sides to reduce muzzle rise.
+
+The Muzzle Brake returns in Call of Duty: Black Ops Cold War as a Muzzle attachment available for Assault Rifles, Submachine Guns, Tactical Rifles, Light Machine Guns, and Pistols. It increases control over vertical recoil.]]
+
+ATT.SortOrder = 1
+
+ATT.Model = "models/weapons/arc9/atts/bocw_carv2_compensator1.mdl"
+
+ATT.Category = {"bocw_carv2_muzzle"}
+
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.MuzzleParticleOverride = "muzzleflash_6"
+ATT.MuzzleParticleOverride_Priority = 10
+ATT.MuzzleDevice = true
+
+ATT.RecoilUpMult = 0.9
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_carv2_muzzle_compensator")
+
+ATT = {}
+
+ATT.PrintName = "Flash Guard 4.73"
+ATT.CompactName = "FLSHGRD 473"
+ATT.Icon = Material("entities/bocw_atts/muzzles/carv2_flashhider1.png", "mips smooth")
+ATT.Description = [[Flash hider preserves vision and conceals position by reducing muzzle flash.
+
+The Flash Guard returns in Call of Duty: Black Ops Cold War as a Muzzle attachment set available for all Primary Weapons and handguns, excluding the sniper rifles and shotguns. For sniper rifles, they have the Flash Hider, and shotguns can use the Flash Cone. These two attachments are identical to the Flash Guard.]]
+
+ATT.SortOrder = 2
+
+ATT.Model = "models/weapons/arc9/atts/bocw_carv2_flashhider1.mdl"
+
+ATT.Category = {"bocw_carv2_muzzle"}
+
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.MuzzleParticleOverride = "muzzleflash_pistol"
+ATT.MuzzleParticleOverride_Priority = 10
+ATT.MuzzleDevice = true
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_carv2_muzzle_flashhider")
+
+ATT = {}
+
+ATT.PrintName = "Silencer"
+ATT.CompactName = "SILENCER"
+ATT.Icon = Material("entities/bocw_atts/muzzles/carv2_silencer1.png", "mips smooth")
+ATT.Description = [[Eliminates muzzle flash and reduces firing acoustics to improve position concealment.
+
+The Silencer, Suppressor, and Sound Suppressor all return in Call of Duty: Black Ops Cold War. With Assault Rifles and Light Machine Guns getting Suppressors, Tactical Rifles getting Silencers and Sound Suppressors being given to Submachine Guns, Pistols and Shotguns. All give the same upside of total muzzle flash and sound concealment however, each one has differing downsides, with Silencers having reduced bullet velocity, Sound Suppressors having reduced range, whilst Suppressors have both of the downsides.]]
+
+ATT.SortOrder = 3
+
+ATT.Model = "models/weapons/arc9/atts/bocw_carv2_silencer1.mdl"
+
+ATT.Category = {"bocw_carv2_muzzle"}
+
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
+ATT.MuzzleParticleOverride_Priority = 10
+ATT.MuzzleDevice = true
+ATT.Silencer = true
+
+ATT.PhysBulletMuzzleVelocityMult = 0.85
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_carv2_muzzle_silencer")
+
+ATT = {}
+
+ATT.PrintName = "Infantry Compensator"
+ATT.CompactName = "INF COMP"
+ATT.Icon = Material("entities/bocw_atts/muzzles/carv2_compensatorpro.png", "mips smooth")
+ATT.Description = [[In-line vent holes expel gasses upwards to reduce muzzle rise.
+
+The Infantry Compensator is a Muzzle attachment available for NATO related Assault Rifles, Submachine Guns, Tactical Rifles, Light Machine Guns, and Pistols in Call of Duty: Black Ops Cold War. It increases control over vertical recoil at the cost of some horizontal recoil. The Warsaw Pact equivalent is the Spetsnaz Compensator.]]
+
+ATT.SortOrder = 4
+
+ATT.Model = "models/weapons/arc9/atts/bocw_carv2_compensatorpro.mdl"
+
+ATT.Category = {"bocw_carv2_muzzle"}
+
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.MuzzleParticleOverride = "muzzleflash_6"
+ATT.MuzzleParticleOverride_Priority = 10
+ATT.MuzzleDevice = true
+
+ATT.RecoilUpMult = 0.75
+ATT.RecoilSideMult = 1.1
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_carv2_muzzle_compensatorpro")
+
+ATT = {}
+
+ATT.PrintName = "SOCOM Eliminator"
+ATT.CompactName = "SOCOM ELIM"
+ATT.Icon = Material("entities/bocw_atts/muzzles/carv2_flashhiderpro.png", "mips smooth")
+ATT.Description = [[Reduces muzzle flash and vents gasses to the sides to reduce muzzle rise.
+
+The SOCOM Eliminator is a Muzzle attachment available for NATO related Assault Rifles, Submachine Guns, Tactical Rifles, Light Machine Guns, and Pistols within Call of Duty: Black Ops Cold War. It increases control over vertical recoil and increases the concealment of the muzzle flash at the cost of some horizontal recoil alongside reduced shooting movement speed. The Warsaw Pact equivalent is the KGB Eliminator.]]
+
+ATT.SortOrder = 5
+
+ATT.Model = "models/weapons/arc9/atts/bocw_carv2_flashhiderpro.mdl"
+
+ATT.Category = {"bocw_carv2_muzzle"}
+
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.MuzzleParticleOverride = "muzzleflash_pistol"
+ATT.MuzzleParticleOverride_Priority = 10
+ATT.MuzzleDevice = true
+
+ATT.RecoilUpMult = 0.83
+
+ATT.SpeedMultShooting = 0.9
+ATT.RecoilSideMult = 1.1
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_carv2_muzzle_flashhiderpro")
+
+ATT = {}
+
+ATT.PrintName = "Agency Silencer"
+ATT.CompactName = "AGCY SLNCR"
+ATT.Icon = Material("entities/bocw_atts/muzzles/carv2_silencerpro.png", "mips smooth")
+ATT.Description = [[Traps gas to reduce muzzle rise and maintain control. Provides flash and sound suppression.
+
+The Agency Silencer is a Muzzle attachment available for NATO-related Tactical Rifles within Call of Duty: Black Ops Cold War. It increases control over vertical recoil and gives full concealment of the muzzle flash at the cost of reduced bullet speed. The Warsaw Pact equivalent is the GRU Silencer.]]
+
+ATT.SortOrder = 6
+
+ATT.Model = "models/weapons/arc9/atts/bocw_carv2_silencerpro.mdl"
+
+ATT.Category = {"bocw_carv2_muzzle"}
+
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
+ATT.MuzzleParticleOverride_Priority = 10
+ATT.MuzzleDevice = true
+ATT.Silencer = true
+
+ATT.RecoilUpMult = 0.85
+
+ATT.PhysBulletMuzzleVelocityMult = 0.7
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_carv2_muzzle_silencerpro")

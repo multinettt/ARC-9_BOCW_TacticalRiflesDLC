@@ -231,7 +231,7 @@ sound.Add({
 
 sound.Add({
     name = "ARC9_BOCW.CARV2_fire_silenced_burst",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON,
     volume = 1.0,
     sound = "weapons/arc9/bocw_carv2/carv2_fire_silenced_burst.wav"
 })

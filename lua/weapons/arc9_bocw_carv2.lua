@@ -186,7 +186,8 @@ SWEP.Firemodes = {
     {
         Mode = 1,
         FirstShootSound = nil,
-        ShootSound = "ARC9_BOCW.CARV2_fire"
+        ShootSound = "ARC9_BOCW.CARV2_fire",
+        ShootSoundSilenced = "ARC9_BOCW.CARV2_fire_silenced"
     },
 }
 
@@ -288,11 +289,11 @@ SWEP.ShootPitchVariation = 0.05
 --SWEP.FirstShootSound = "ARC9_BOCW.CARV2_fire_burst"
 --SWEP.ShootSound = nil
 --SWEP.ShootSoundIndoor = "ARC9_BOCW.CARV2_fire_int_decay"                  -- Fire indoors
-SWEP.ShootSoundSilenced = "ARC9_BOCW.CARV2_fire_silenced"                    -- Fire silenced
+--SWEP.ShootSoundSilenced = "ARC9_BOCW.CARV2_fire_silenced"                    -- Fire silenced
 SWEP.ShootSoundIndoorSilenced = nil             -- Fire indoors silenced
 SWEP.FirstShootSoundSilenced = nil              -- First fire silenced
 SWEP.FirstDistantShootSound = nil               -- First distant fire
-SWEP.DistantShootSound = "ARC9_BOCW.Shared_Decay_Close_CARV2"                     -- Distant fire
+SWEP.DistantShootSound = "ARC9_BOCW.Shared_Decay_Close_M16"                     -- Distant fire
 SWEP.DistantShootSoundIndoor = nil              -- Distant fire indoors
 SWEP.DistantShootSoundSilenced = "ARC9_BOCW.Shared_Decay_Close_Suppressor"            -- Distant fire silenced
 SWEP.DistantShootSoundIndoorSilenced = nil      -- Distant fire indoors silenced
