@@ -860,3 +860,124 @@ ATT.PhysBulletMuzzleVelocityMult = 0.7
 ATT.MenuCategory = "ARC9 - BOCW Attachments"
 
 ARC9.LoadAttachment(ATT, "bocw_carv2_muzzle_silencerpro")
+
+--
+
+ATT = {}
+
+ATT.PrintName = "Infiltrator Grip"
+ATT.CompactName = "INFIL GRIP"
+ATT.Icon = Material("entities/bocw_atts/underbarrels/carv2_infiltrator.png", "mips smooth")
+ATT.Description = [[Ribbed polymer foregrip for improved combat maneuverability.
+
+The Infiltrator Grip is an Underbarrel attachment available for Assault Rifles, Tactical Rifles, Light Machine Guns and Sniper Rifles in Call of Duty: Black Ops Cold War. It gives a general increase in standard movement types.]]
+
+ATT.SortOrder = 2
+
+ATT.Model = "models/weapons/arc9/atts/bocw_carv2_underbarrel_infiltrator.mdl"
+
+ATT.Category = {"bocw_carv2_underbarrel"}
+
+ATT.ModelOffset = Vector(0, 0, 0.14)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.LHIK = true
+ATT.LHIK_Priority = 5
+
+ATT.SpeedMult = 1.05
+ATT.SpeedMultShooting = 1.05
+ATT.SpeedMultSighted = 1.05
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_carv2_underbarrel_infiltrator")
+
+ATT = {}
+
+ATT.PrintName = "Patrol Grip"
+ATT.CompactName = "PATROL GRIP"
+ATT.Icon = Material("entities/bocw_atts/underbarrels/carv2_patrol.png", "mips smooth")
+ATT.Description = [[Ergonomic polymer foregrip for improved sprint speed.
+
+The Patrol Grip is an Underbarrel attachment available for all Primary Weapons in Call of Duty: Black Ops Cold War. It increases the speed of sprinting.]]
+
+ATT.SortOrder = 3
+
+ATT.Model = "models/weapons/arc9/atts/bocw_carv2_underbarrel_patrol.mdl"
+
+ATT.Category = {"bocw_carv2_underbarrel"}
+
+ATT.ModelOffset = Vector(0, 0, 0.15)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.LHIK = true
+ATT.LHIK_Priority = 5
+
+ATT.SpeedMultSprint = 1.06
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_carv2_underbarrel_patrol")
+
+ATT = {}
+
+ATT.PrintName = "Bruiser Grip"
+ATT.CompactName = "BRUISR GRIP"
+ATT.Icon = Material("entities/bocw_atts/underbarrels/carv2_bruiser.png", "mips smooth")
+ATT.Description = [[Contoured polymer foregrip for faster weapon melee combat and movement speeds.
+
+The Bruiser Grip is an Underbarrel attachment available for all Primary Weapons in Call of Duty: Black Ops Cold War. It gives a minor increase to movement speeds alongside an increase to melee swing speeds.]]
+
+ATT.SortOrder = 4
+
+ATT.Model = "models/weapons/arc9/atts/bocw_carv2_underbarrel_bruiser.mdl"
+
+ATT.Category = {"bocw_carv2_underbarrel"}
+
+ATT.ModelOffset = Vector(0, 0, 0.2) -- me when nernst eşitliği
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.LHIK = true
+ATT.LHIK_Priority = 5
+
+ATT.SpeedMult = 1.03
+ATT.SpeedMultSprint = 1.03
+ATT.SpeedMultShooting = 1.03
+ATT.SpeedMultSighted = 1.03
+ATT.BashSpeedMult = 1.4
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_carv2_underbarrel_bruiser")
+
+ATT = {}
+
+ATT.PrintName = "SFOD Speedgrip"
+ATT.CompactName = "SFOD SPEED"
+ATT.Icon = Material("entities/bocw_atts/underbarrels/carv2_sfodspeed.png", "mips smooth")
+ATT.Description = [[Vertical grip with rounded contours for improved sprint speed and recoil control.
+
+The SFOD Speedgrip is an Underbarrel attachment available for all NATO related Primary weapons, except the Swiss K31. It improves horizontal recoil and movement speed while sprinting but at the cost of a lowered general movement speeds. There are two Warsaw Pact equivalents in the Spetsnaz Speedgrip and VDV Speedgrip.]]
+
+ATT.SortOrder = 6
+
+ATT.Model = "models/weapons/arc9/atts/bocw_carv2_underbarrel_sfodspeed.mdl"
+
+ATT.Category = {"bocw_carv2_underbarrel"}
+
+ATT.ModelOffset = Vector(0, 0, 0.15)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.LHIK = true
+ATT.LHIK_Priority = 5
+
+ATT.SpeedMultSprint = 1.05
+ATT.RecoilSideMult = 0.85
+
+ATT.SpeedMult = 0.94
+ATT.SpeedMultShooting = 0.94
+ATT.SpeedMultSighted = 0.94
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_carv2_underbarrel_sfodspeed")

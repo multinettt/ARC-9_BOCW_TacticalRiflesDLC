@@ -669,7 +669,7 @@ SWEP.Attachments = {
         Pos = Vector(-10.3, -4.42, 6.3),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(20.25, 4.5, -5),
-        Category = {"bocw_tr_underbarrel_west"},
+        Category = {"bocw_carv2_underbarrel"},
     },
     {
         PrintName = "MAGAZINE",
@@ -807,16 +807,11 @@ SWEP.Animations = {
         IKTimeLine = {
             {
                 t = 0,
-                lhik = 0,
+                lhik = 1,
                 rhik = 0
             },
             {
-                t = 0.2,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.4,
+                t = 1,
                 lhik = 1,
                 rhik = 0
             },
@@ -831,7 +826,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 1,
+                t = 0.4,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.5,
                 lhik = 1,
                 rhik = 0
             },
@@ -851,12 +851,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.55,
+                t = 0.6,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.7,
+                t = 0.65,
                 lhik = 1,
                 rhik = 0
             },
@@ -913,12 +913,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.75,
+                t = 0.8,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.85,
+                t = 0.9,
                 lhik = 1,
                 rhik = 0
             },
@@ -951,12 +951,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.8,
+                t = 0.85,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.85,
+                t = 0.95,
                 lhik = 1,
                 rhik = 0
             },
@@ -979,7 +979,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.1,
+                t = 0.2,
                 lhik = 0,
                 rhik = 0
             },
@@ -989,7 +989,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.85,
+                t = 0.9,
                 lhik = 1,
                 rhik = 0
             },
@@ -1021,12 +1021,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.8,
+                t = 0.85,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.85,
+                t = 0.95,
                 lhik = 1,
                 rhik = 0
             },
@@ -1049,17 +1049,17 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.1,
+                t = 0.2,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.75,
+                t = 0.8,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.775,
+                t = 0.9,
                 lhik = 1,
                 rhik = 0
             },
@@ -1082,17 +1082,17 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.1,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.75,
+                t = 0.2,
                 lhik = 0,
                 rhik = 0
             },
             {
                 t = 0.8,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
                 lhik = 1,
                 rhik = 0
             },
@@ -1123,12 +1123,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.75,
+                t = 0.85,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.85,
+                t = 0.95,
                 lhik = 1,
                 rhik = 0
             },
@@ -1160,12 +1160,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.8,
+                t = 0.85,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.9,
+                t = 0.95,
                 lhik = 1,
                 rhik = 0
             },
@@ -1193,12 +1193,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.75,
+                t = 0.8,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.8,
+                t = 0.9,
                 lhik = 1,
                 rhik = 0
             },
@@ -1230,12 +1230,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.75,
+                t = 0.85,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.8,
+                t = 0.95,
                 lhik = 1,
                 rhik = 0
             },
@@ -1260,9 +1260,12 @@ SWEP.Animations = {
         Source = "inspect",
         EventTable = {
             { s = "ARC9_BOCW.CARV2_inspect_part1", t = 0 },
-            { s = "ARC9_BOCW.CARV2_inspect_part2", t = 1.7 },
-            { s = "ARC9_BOCW.CARV2_inspect_part3", t = 4 },
-            { s = "ARC9_BOCW.CARV2_inspect_part4", t = 4.9 }
+            { s = "ARC9_BOCW.CARV2_inspect_part2", t = 1.1 },
+            { s = "ARC9_BOCW.CARV2_inspect_part3", t = 2 },
+            { s = "ARC9_BOCW.CARV2_inspect_part4", t = 2.7 },
+            { s = "ARC9_BOCW.CARV2_inspect_part5", t = 4.5 },
+            { s = "ARC9_BOCW.CARV2_inspect_part6", t = 5.5 },
+            { s = "ARC9_BOCW.CARV2_inspect_part7", t = 6.8 }
         },
         IKTimeLine = {
             {
@@ -1271,17 +1274,61 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.1,
+                t = 0.2,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.25,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.8,
+                t = 0.45,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.95,
+                t = 0.5,
+                lhik = 1,
+                rhik = 0
+            },
+        },
+    },
+    ["enter_inspect_ext"] = {
+        Source = "inspect_ext",
+        EventTable = {
+            { s = "ARC9_BOCW.CARV2_inspect_part1", t = 0 },
+            { s = "ARC9_BOCW.CARV2_inspect_part2", t = 1.1 },
+            { s = "ARC9_BOCW.CARV2_inspect_part3", t = 2 },
+            { s = "ARC9_BOCW.CARV2_inspect_part4", t = 2.7 },
+            { s = "ARC9_BOCW.CARV2_inspect_part5", t = 4.5 },
+            { s = "ARC9_BOCW.CARV2_inspect_part6", t = 5.5 },
+            { s = "ARC9_BOCW.CARV2_inspect_part7", t = 6.8 }
+        },
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.25,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.45,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.5,
                 lhik = 1,
                 rhik = 0
             },
