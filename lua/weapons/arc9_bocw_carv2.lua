@@ -428,7 +428,7 @@ SWEP.SightMidPoint = {
 
 -- Position for customizing
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(8, 36, 5)
+SWEP.CustomizePos = Vector(8, 38, 5)
 SWEP.CustomizeRotateAnchor = Vector(8, 0, -5)
 
 SWEP.CustomizeSnapshotFOV = 70
@@ -476,17 +476,12 @@ SWEP.AttachmentElements = {
     },
     ["barrelgone"] = {
         Bodygroups = {
-            {4, 2},
-        }
-    },
-    ["barrelringgone"] = {
-        Bodygroups = {
-            {5, 1},
+            {4, 1},
         }
     },
     ["stockgone"] = {
         Bodygroups = {
-            {6, 2},
+            {5, 1},
         }
     },
     ["bayonetgone"] = {
@@ -510,7 +505,7 @@ SWEP.AttachmentElements = {
         },
         AttPosMods = {
             [2] = {
-                Pos = Vector(-5.21, 0, 0),
+                Pos = Vector(-3.085, 0, 0),
             },
             [4] = {
                 Pos = Vector(15.22, 0, 3.42),
@@ -523,7 +518,7 @@ SWEP.AttachmentElements = {
         },
         AttPosMods = {
             [2] = {
-                Pos = Vector(-5.51, 0, 0),
+                Pos = Vector(1.338, 0, 0),
             },
             [4] = {
                 Pos = Vector(15.26, 0, 3.42),
@@ -536,7 +531,7 @@ SWEP.AttachmentElements = {
         },
         AttPosMods = {
             [2] = {
-                Pos = Vector(-5.51, 0, 0),
+                Pos = Vector(-0.31, 0, 0),
             },
             [4] = {
                 Pos = Vector(15.22, 0, 3.42),
@@ -549,7 +544,7 @@ SWEP.AttachmentElements = {
         },
         AttPosMods = {
             [2] = {
-                Pos = Vector(-0.3, 0, 0),
+                Pos = Vector(3.23, 0, 0),
             }
         },
     },
@@ -559,7 +554,7 @@ SWEP.AttachmentElements = {
         },
         AttPosMods = {
             [2] = {
-                Pos = Vector(-5.21, 0, 0),
+                Pos = Vector(-4.075, 0, 0),
             },
             [4] = {
                 Pos = Vector(15.26, 0, 3.42),
@@ -572,7 +567,7 @@ SWEP.AttachmentElements = {
         },
         AttPosMods = {
             [2] = {
-                Pos = Vector(-0.3, 0, 0),
+                Pos = Vector(1.509, 0, 0),
             }
         },
     },
@@ -657,6 +652,7 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0.325),
         Category = {"bocw_carv2_barrel"},
+        InstalledElements = {"barrelgone"},
     },
     {
         PrintName = "BODY",
@@ -679,7 +675,7 @@ SWEP.Attachments = {
         Bone = "tag_clip",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, 0, -0.5),
+        Icon_Offset = Vector(0, 0, -1.5),
         Category = {"bocw_carv2_mag"},
         InstalledElements = {"maggone"},
     },
@@ -688,7 +684,7 @@ SWEP.Attachments = {
         Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(-0.75, 0, -1),
+        Icon_Offset = Vector(-0.25, 0, -0.75),
         Category = {"bocw_carv2_wrap"},
     },
     {
@@ -698,6 +694,7 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
         Category = {"bocw_carv2_stock"},
+        InstalledElements = {"stockgone"},
     },
     {
         PrintName = "CAMO",
@@ -967,13 +964,12 @@ SWEP.Animations = {
     ["reload_ext"] = {
         Source = "reload_ext",
         Time = 2.5,
-        MinProgress = 0.65,
+        MinProgress = 0.7,
         EventTable = {
             { s = "ARC9_BOCW.CARV2_reload_start", t = 0 },
-            { s = "ARC9_BOCW.CARV2_reload_magout", t = 0.2 },
-            { s = "ARC9_BOCW.CARV2_reload_maginrattle", t = 1.5 },
-            { s = "ARC9_BOCW.CARV2_reload_magin", t = 1.8 },
-            { s = "ARC9_BOCW.CARV2_reload_end", t = 2.4 },
+            { s = "ARC9_BOCW.CARV2_reload_ext_magout", t = 0.3 },
+            { s = "ARC9_BOCW.CARV2_reload_ext_magin", t = 1.2 },
+            { s = "ARC9_BOCW.CARV2_reload_end", t = 2 },
         },
         IKTimeLine = {
             {
@@ -1005,13 +1001,12 @@ SWEP.Animations = {
         MagSwapTime = 1,
         DropMagAt = 0.6,
         EventTable = {
-            { s = "ARC9_BOCW.CARV2_reload_start", t = 0 },
-            { s = "ARC9_BOCW.CARV2_reload_magout", t = 0.2 },
-            { s = "ARC9_BOCW.CARV2_reload_maginrattle", t = 1.4 },
-            { s = "ARC9_BOCW.CARV2_reload_magin", t = 1.85 },
-            { s = "ARC9_BOCW.CARV2_boltback", t = 2.5 },
-            { s = "ARC9_BOCW.CARV2_boltrelease", t = 2.7 },
-            { s = "ARC9_BOCW.CARV2_reload_empty_end", t = 3.1 },
+            { s = "ARC9_BOCW.CARV2_reload_empty_start", t = 0 },
+            { s = "ARC9_BOCW.CARV2_reload_ext_empty_magout", t = 0.3 },
+            { s = "ARC9_BOCW.CARV2_reload_ext_magin", t = 1.2 },
+            { s = "ARC9_BOCW.CARV2_charginghandle_start", t = 2.2 },
+            { s = "ARC9_BOCW.CARV2_charginghandle", t = 2.2 },
+            { s = "ARC9_BOCW.CARV2_reload_empty_end", t = 2.8 },
         },
         IKTimeLine = {
             {
@@ -1042,10 +1037,9 @@ SWEP.Animations = {
         MinProgress = 0.6,
         EventTable = {
             { s = "ARC9_BOCW.CARV2_reload_start", t = 0 },
-            { s = "ARC9_BOCW.CARV2_reload_dual_magout", t = 0.3 },
-            { s = "ARC9_BOCW.CARV2_reload_maginrattle", t = 1 },
-            { s = "ARC9_BOCW.CARV2_reload_dual_magin", t = 1.2 },
-            { s = "ARC9_BOCW.CARV2_reload_end", t = 2.2 },
+            { s = "ARC9_BOCW.CARV2_reload_magout", t = 0.2 },
+            { s = "ARC9_BOCW.CARV2_reload_magin", t = 0.9 },
+            { s = "ARC9_BOCW.CARV2_reload_end", t = 2 },
         },
         IKTimeLine = {
             {
@@ -1076,10 +1070,9 @@ SWEP.Animations = {
         MinProgress = 0.65,
         EventTable = {
             { s = "ARC9_BOCW.CARV2_reload_start", t = 0 },
-            { s = "ARC9_BOCW.CARV2_reload_dual2_magout", t = 0.3 },
-            { s = "ARC9_BOCW.CARV2_reload_maginrattle", t = 1.3 },
-            { s = "ARC9_BOCW.CARV2_reload_dual2_magin", t = 1.6 },
-            { s = "ARC9_BOCW.CARV2_reload_end", t = 2.2 },
+            { s = "ARC9_BOCW.CARV2_reload_magout", t = 0.2 },
+            { s = "ARC9_BOCW.CARV2_reload_magin", t = 0.9 },
+            { s = "ARC9_BOCW.CARV2_reload_end", t = 2 },
         },
         IKTimeLine = {
             {
@@ -1109,12 +1102,13 @@ SWEP.Animations = {
         Time = 3.42,
         MinProgress = 0.5,
         EventTable = {
-            { s = "ARC9_BOCW.CARV2_reload_start", t = 0 },
-            { s = "ARC9_BOCW.CARV2_reload_dual_magout", t = 0.3 },
-            { s = "ARC9_BOCW.CARV2_reload_maginrattle", t = 1 },
-            { s = "ARC9_BOCW.CARV2_reload_dual_magin", t = 1.2 },
-            { s = "ARC9_BOCW.CARV2_reload_dual_empty_boltrelease", t = 2.4 },
-            { s = "ARC9_BOCW.CARV2_reload_end", t = 2.9 },
+            { s = "ARC9_BOCW.CARV2_reload_empty_start", t = 0 },
+            { s = "ARC9_BOCW.CARV2_reload_empty_magout", t = 0.2 },
+            { s = "ARC9_BOCW.CARV2_reload_empty_maginstart", t = 0.7 },
+            { s = "ARC9_BOCW.CARV2_reload_magin", t = 0.9 },
+            { s = "ARC9_BOCW.CARV2_charginghandle_start", t = 2.1 },
+            { s = "ARC9_BOCW.CARV2_charginghandle", t = 2.1 },
+            { s = "ARC9_BOCW.CARV2_reload_empty_end", t = 2.7 },
         },
         IKTimeLine = {
             {
@@ -1142,15 +1136,16 @@ SWEP.Animations = {
     ["1_reload_empty_dual"] = {
         Source = "reload_dual2_empty",
         Time = 3.42,
-        MinProgress = 0.6,
+        MinProgress = 0.5,
         DropMagAt = 1.1,
         EventTable = {
-            { s = "ARC9_BOCW.CARV2_reload_start", t = 0 },
-            { s = "ARC9_BOCW.CARV2_reload_dual2_magout", t = 0.3 },
-            { s = "ARC9_BOCW.CARV2_reload_maginrattle", t = 1.5 },
-            { s = "ARC9_BOCW.CARV2_reload_dual2_magin", t = 1.9 },
-            { s = "ARC9_BOCW.CARV2_reload_dual_empty_boltrelease", t = 2.6 },
-            { s = "ARC9_BOCW.CARV2_reload_end", t = 3 },
+            { s = "ARC9_BOCW.CARV2_reload_empty_start", t = 0 },
+            { s = "ARC9_BOCW.CARV2_reload_empty_magout", t = 0.2 },
+            { s = "ARC9_BOCW.CARV2_reload_empty_maginstart", t = 0.7 },
+            { s = "ARC9_BOCW.CARV2_reload_magin", t = 0.9 },
+            { s = "ARC9_BOCW.CARV2_charginghandle_start", t = 2.1 },
+            { s = "ARC9_BOCW.CARV2_charginghandle", t = 2.1 },
+            { s = "ARC9_BOCW.CARV2_reload_empty_end", t = 2.7 },
         },
         IKTimeLine = {
             {
@@ -1178,13 +1173,12 @@ SWEP.Animations = {
     ["reload_mix"] = {
         Source = "reload_mix",
         Time = 2.5,
-        MinProgress = 0.58,
+        MinProgress = 0.7,
         EventTable = {
             { s = "ARC9_BOCW.CARV2_reload_start", t = 0 },
-            { s = "ARC9_BOCW.CARV2_reload_magout", t = 0.1 },
-            { s = "ARC9_BOCW.CARV2_reload_maginrattle", t = 0.9 },
-            { s = "ARC9_BOCW.CARV2_reload_magin", t = 1.5 },
-            { s = "ARC9_BOCW.CARV2_reload_end", t = 2.2 },
+            { s = "ARC9_BOCW.CARV2_reload_magout", t = 0.2 },
+            { s = "ARC9_BOCW.CARV2_reload_magin", t = 1 },
+            { s = "ARC9_BOCW.CARV2_reload_end", t = 2 },
         },
         IKTimeLine = {
             {
@@ -1212,14 +1206,15 @@ SWEP.Animations = {
     ["reload_empty_mix"] = {
         Source = "reload_mix_empty",
         Time = 3.42,
-        MinProgress = 0.4,
+        MinProgress = 0.55,
         MagSwapTime = 1,
         EventTable = {
-            { s = "ARC9_BOCW.CARV2_reload_start", t = 0 },
-            { s = "ARC9_BOCW.CARV2_reload_magout", t = 0.1 },
-            { s = "ARC9_BOCW.CARV2_reload_maginrattle", t = 0.9 },
-            { s = "ARC9_BOCW.CARV2_reload_magin", t = 1.5 },
-            { s = "ARC9_BOCW.CARV2_reload_dual_empty_boltrelease", t = 2.3 },
+            { s = "ARC9_BOCW.CARV2_reload_empty_start", t = 0 },
+            { s = "ARC9_BOCW.CARV2_reload_empty_magout", t = 0.3 },
+            { s = "ARC9_BOCW.CARV2_reload_empty_maginstart", t = 0.8 },
+            { s = "ARC9_BOCW.CARV2_reload_magin", t = 1 },
+            { s = "ARC9_BOCW.CARV2_charginghandle_start", t = 2.1 },
+            { s = "ARC9_BOCW.CARV2_charginghandle", t = 2.1 },
             { s = "ARC9_BOCW.CARV2_reload_empty_end", t = 2.8 },
         },
         IKTimeLine = {

@@ -541,7 +541,7 @@ ATT.SortOrder = 1
 
 ATT.Category = "bocw_carv2_stock"
 
-ATT.Model = "models/weapons/arc9/atts/bocw_carv2_stock_wire.mdl"
+ATT.Model = "models/weapons/arc9/atts/bocw_carv2_stock_marathon.mdl"
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
