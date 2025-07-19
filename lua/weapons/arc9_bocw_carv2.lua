@@ -584,13 +584,13 @@ SWEP.AttachmentSlotMods = {
 
 -- Adjust the stats of specific attachments when applied to this gun
 SWEP.AttachmentTableOverrides = {
-    ["bocw_ak47_body_laser1"] = {
-        ModelOffset = Vector(0,-0.007,0.03),
-        Scale = 0.9,
+    ["bocw_body_flashlight_west"] = {
+        ModelOffset = Vector(0,0.02,-0.98),
+        Scale = 1,
     },
-    ["bocw_ak47_body_laserpro"] = {
-        ModelOffset = Vector(0,-0.007,0.031),
-        Scale = 0.9,
+    ["bocw_body_flashlightpro_west"] = {
+        ModelOffset = Vector(0,0.02,-0.98),
+        Scale = 1,
     },
     ["bocw_ak47_body_mixbody1"] = {
         ModelOffset = Vector(0.8,-0.18,0),
@@ -658,10 +658,10 @@ SWEP.Attachments = {
     {
         PrintName = "BODY",
         Bone = "tag_weapon",
-        Pos = Vector(12.5, 0, 5.5),
-        Ang = Angle(0, 0, 0),
+        Pos = Vector(11, 1.18, 3.77),
+        Ang = Angle(0, 0, -90),
         Icon_Offset = Vector(0, 0, 0),
-        Category = {"bocw_carv2_body"},
+        Category = {"bocw_xm4_body", "bocw_body_flashlight_west"},
     },
     {
         PrintName = "UNDRBARREL",
@@ -735,7 +735,7 @@ SWEP.Attachments = {
         Category = "stickers",
         StickerModel = "models/weapons/arc9/stickers/bocw_carv2_sticker4.mdl",
         CosmeticOnly = true,
-        ExcludeElements = {"carv2_mag_ext", "carv2_mag_dual"}
+        ExcludeElements = {"carv2_mag_ext", "carv2_mag_dual", "carv2_mag_mix"}
     },
     {
         PrintName = "STICKER 4", 
@@ -761,12 +761,37 @@ SWEP.Attachments = {
         CosmeticOnly = true,
         RequireElements = {"carv2_mag_dual"}
     },
+    {
+        PrintName = "STICKER 4", 
+        Bone = "tag_clip",
+        Category = "stickers",
+        StickerModel = "models/weapons/arc9/stickers/bocw_carv2_sticker4_mix.mdl",
+        CosmeticOnly = true,
+        RequireElements = {"bocw_carv2_magazine_mix1"}
+    },
+    {
+        PrintName = "STICKER 4", 
+        Bone = "tag_clip",
+        Category = "stickers",
+        StickerModel = "models/weapons/arc9/stickers/bocw_carv2_sticker4_mixpro.mdl",
+        CosmeticOnly = true,
+        RequireElements = {"bocw_carv2_magazine_mixpro"}
+    },
 }
 
 SWEP.Hook_ModifyBodygroups = function(self, data)
 
     local vm = data.model
     local attached = data.elements
+
+    if attached["bocw_xm4_body"] then
+        vm:SetBodygroup(6, 1) -- set correct rail mount for body attachments
+    end
+
+    if attached["bocw_body_flashlight_west"] then
+        vm:SetBodygroup(6, 1)
+        vm:SetBodygroup(7, 1)
+    end
 end
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
