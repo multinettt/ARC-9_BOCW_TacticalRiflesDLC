@@ -7,7 +7,7 @@
 --   SWEP INFORMATION:
 
 --   BASE  : ARC9
---   BUILD : v2025.7
+--   BUILD : v2025.12
 --   SR.NO : 29481/860
 
 
@@ -255,7 +255,15 @@ SWEP.ShootWhileSprint = false
 SWEP.Speed = 1
 
 SWEP.SpeedMult = 0.95
-SWEP.SpeedMultSprint = 0.706
+
+local SprintMultCvar = GetConVar("arc9_bocw_sprintmultiplier")
+
+if SprintMultCvar:GetBool() then
+    SWEP.SpeedMultSprint = 0.706 -- SPRINT SPEED RELATIVE TO MOVE SPEED
+else
+    SWEP.SpeedMultSprint = 1 -- this may possibly change later
+end
+
 SWEP.SpeedMultSights = 0.395
 SWEP.SpeedMultShooting = 0.85
 SWEP.SpeedMultMelee = 0.8
@@ -766,6 +774,22 @@ SWEP.Attachments = {
         RequireElements = {"bocw_carv2_magazine_mixpro"}
     },
 }
+--=========================================================
+-- CUSTOM SLOT INSERTION
+local CustomSlotCvar = GetConVar("arc9_bocw_customslot")
+local CustomSlotTable = {
+    PrintName = "Custom Slot",
+    Bone = "tag_stock",
+    Pos = Vector(0, 0, 0),
+    Ang = Angle(0, 0, 0),
+    Icon_Offset = Vector(-2, 0, 0),
+    Category = {"bocw_custom_slot", "bocw_custom_slot_carv2"},
+}
+
+if CustomSlotCvar:GetBool() then
+    table.insert(SWEP.Attachments, CustomSlotTable)
+end
+--=========================================================
 
 SWEP.Hook_ModifyBodygroups = function(self, data)
 
