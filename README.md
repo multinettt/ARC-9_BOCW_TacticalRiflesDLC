@@ -4,8 +4,6 @@ One BOCW Tactical Rifles DLC on the base [ARC9](https://github.com/HaodongMo/ARC
 
 Only one tactical rifle was added post launch. Kinda sad.
 
-## [ARC9 BOCW Tactical Rifles DLC on Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3529752644)
-
 ## You need to have [Shared Content](https://github.com/multinettt/ARC-9_BOCW_Shared_Content) in order to avoid missing textures, materials and sounds.
 
 ## [BOCW Attachments](https://github.com/multinettt/ARC-9_BOCW_Attachments)
