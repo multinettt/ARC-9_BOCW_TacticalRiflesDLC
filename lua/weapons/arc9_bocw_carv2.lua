@@ -29,7 +29,7 @@ SWEP.Base = "arc9_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Black Ops Cold War"
-SWEP.SubCategory = "3Tactical Rifles"
+SWEP.SubCategory = "2Tactical Rifles"
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "CARV.2"
